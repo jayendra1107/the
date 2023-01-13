@@ -1,0 +1,52 @@
+.jira-container {
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "ticket"
+    "ticket"
+    "ticket"
+    "ticket";
+}
+
+.navbar {
+  padding: 0 3rem;
+  grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-img {
+  height: 1.5rem;
+}
+
+.ticket-container {
+  grid-area: ticket;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.ticket {
+  height: 30rem;
+  width: 20rem;
+  background-color: white;
+}
+
+.jira-btn {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  color: white;
+  margin: 2rem;
+}
